@@ -55,13 +55,13 @@ plot(n_vector, s_success_tx_probability, '^m');
 plot(n_vector, t_successful_tx_probability, '-m');
 plot(n_vector, s_collision_probability, 'dc');
 plot(n_vector, t_collision_probability, '-c');
-xlabel('Número de nós 802.11');
+xlabel('NÃºmero de nÃ³s 802.11');
 ylabel('Probabilidade de acesso ao canal');
 legend('Simul. prob. livre', 'Teor. prob. livre',...
        'Simul. prob. ocupado', 'Teor. prob. ocupado',...
        'Simul. prob. transm.', 'Theor. prob. transm.',...
        'Simul. prob. sucesso', 'Theor. prob. sucesso',...
        'Simul. prob. colisao', 'Theor. prob. colisao');
-title('Simulação');
+title('SimulaÃ§Ã£o');
 
 end
