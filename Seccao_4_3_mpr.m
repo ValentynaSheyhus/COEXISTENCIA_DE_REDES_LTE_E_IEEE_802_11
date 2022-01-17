@@ -121,7 +121,7 @@ while (i<simulation_time)
             transmissions(discard) = zeros(1, numel(discard));
             cw(discard)=cw_min(discard);
             
-            time_line(2,i) = numel(find(Coll_nodes <= n_wifi));      % adicionar a timelime o nr de nós que tx sem sucesso
+            time_line(2,i) = numel(find(Coll_nodes <= n_wifi));      % adicionar a timelime o nr de nÃ³s que tx sem sucesso
             time_line(4,i) = numel(find(Coll_nodes > n_wifi));
         end
         
@@ -130,9 +130,9 @@ while (i<simulation_time)
         end
         trans_not_max_cw = [];
         
-        m_nodes = [transm_nodes m_observ_nodes];    % reiniciamos m dos nós que transmitiram e que estão em fase 'm'
+        m_nodes = [transm_nodes m_observ_nodes];    % reiniciamos m dos nÃ³s que transmitiram e que estÃ£o em fase 'm'
         m_vector(m_nodes) = m_vector2(m_nodes);
-        sync_nodes = backoff_nodes < n_wifi;        % nós wifi em backoff aguardam mais dois slots (16 micros de LAA + 2 slots x 9 micros)
+        sync_nodes = backoff_nodes < n_wifi;        % nÃ³s wifi em backoff aguardam mais dois slots (16 micros de LAA + 2 slots x 9 micros)
         if(sync_nodes)
             m_vector(backoff_nodes(sync_nodes)) = sync;
         end
